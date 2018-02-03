@@ -10,9 +10,9 @@ from copy import deepcopy
 from string import punctuation
 from random import shuffle
 
-import gensim
-from gensim.models.word2vec import Word2Vec
-LabeledSentence = gensim.models.doc2vec.LabeledSentence
+# import gensim
+# from gensim.models.word2vec import Word2Vec
+# LabeledSentence = gensim.models.doc2vec.LabeledSentence
 
 from tqdm import tqdm
 tqdm.pandas(desc="progress-bar")
@@ -22,10 +22,10 @@ tokenizer = TweetTokenizer()
 
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
-import seaborn as sb
+# import seaborn as sb
 from sklearn.preprocessing import scale
-import matplotlib.pyplot as plt
-get_ipython().magic('matplotlib inline')
+# import matplotlib.pyplot as plt
+# get_ipython().magic('matplotlib inline')
 
 
 # In[20]:
@@ -137,7 +137,7 @@ def stats(name,fileName):
 # In[36]:
 
 import sys
-sys.path.insert(0,'/Users/jatingarg/Desktop/Hackathon/GetOldTweets-python-master')
+sys.path.insert(0,'/GetOldTweets-python-master')
 import Exporter
 
 
@@ -145,7 +145,7 @@ import Exporter
 
 def getUserTweets(username):
     import os
-    os.system('python3 /Users/jatingarg/Desktop/Hackathon/GetOldTweets-python-master/Exporter.py --username ' + username + ' --maxtweets 5000')
+    os.system('python3 /GetOldTweets-python-master/Exporter.py --username ' + username + ' --maxtweets 5000')
     return stats(username,'usertweets.csv')
 getUserTweets("ask_adarsh")
 
