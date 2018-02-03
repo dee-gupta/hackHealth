@@ -1,0 +1,20 @@
+
+body {
+  font-family: 'Proxima Nova';
+  background: #1abc9c;
+  color: #34495e;
+  text-align: center;
+}
+
+#container{
+  width:400px;
+  height:400px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-200px; /* width / -2 */
+  margin-top:-200px; /* height / -2 */
+}
+h1{
+	color:orange;
+}
