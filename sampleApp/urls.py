@@ -16,7 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from . import views
+from myapp import one_time_startup
 urlpatterns = [
 	url(r'^$', views.index),
 #    url(r'^admin/', admin.site.urls),
 ]
+
+one_time_startup()
