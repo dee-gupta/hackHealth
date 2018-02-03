@@ -145,7 +145,7 @@ import Exporter
 
 def getUserTweets(username):
     import os
-    os.system('python3 /Users/jatingarg/Desktop/Hackathon/GetOldTweets-python-master/Exporter.py --username ' + username + ' --maxtweets 5000')
+    os.system('python3 /GetOldTweets-python-master/Exporter.py --username ' + username + ' --maxtweets 5000')
     return stats(username,'usertweets.csv')
 getUserTweets("ask_adarsh")
 
