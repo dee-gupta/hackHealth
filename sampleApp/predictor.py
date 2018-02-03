@@ -137,7 +137,7 @@ def stats(name,fileName):
 # In[36]:
 
 import sys
-sys.path.insert(0,'/Users/jatingarg/Desktop/Hackathon/GetOldTweets-python-master')
+sys.path.insert(0,'/GetOldTweets-python-master')
 import Exporter
 
 
