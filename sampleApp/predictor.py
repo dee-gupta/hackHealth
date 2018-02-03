@@ -10,9 +10,9 @@ from copy import deepcopy
 from string import punctuation
 from random import shuffle
 
-import gensim
-from gensim.models.word2vec import Word2Vec
-LabeledSentence = gensim.models.doc2vec.LabeledSentence
+# import gensim
+# from gensim.models.word2vec import Word2Vec
+# LabeledSentence = gensim.models.doc2vec.LabeledSentence
 
 from tqdm import tqdm
 tqdm.pandas(desc="progress-bar")
@@ -22,10 +22,10 @@ tokenizer = TweetTokenizer()
 
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
-import seaborn as sb
+# import seaborn as sb
 from sklearn.preprocessing import scale
-import matplotlib.pyplot as plt
-get_ipython().magic('matplotlib inline')
+# import matplotlib.pyplot as plt
+# get_ipython().magic('matplotlib inline')
 
 
 # In[20]:
