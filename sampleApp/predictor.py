@@ -20,8 +20,8 @@ tqdm.pandas(desc="progress-bar")
 from nltk.tokenize import TweetTokenizer
 tokenizer = TweetTokenizer()
 
-from sklearn.model_selection import train_test_split
-from sklearn.feature_extraction.text import TfidfVectorizer
+# from sklearn.model_selection import train_test_split
+# from sklearn.feature_extraction.text import TfidfVectorizer
 # import seaborn as sb
 from sklearn.preprocessing import scale
 # import matplotlib.pyplot as plt
@@ -137,7 +137,7 @@ def stats(name,fileName):
 # In[36]:
 
 import sys
-sys.path.insert(0,'/Users/jatingarg/Desktop/Hackathon/GetOldTweets-python-master')
+sys.path.insert(0,'/GetOldTweets-python-master')
 import Exporter
 
 
@@ -145,7 +145,10 @@ import Exporter
 
 def getUserTweets(username):
     import os
-    os.system('python3 /Users/jatingarg/Desktop/Hackathon/GetOldTweets-python-master/Exporter.py --username ' + username + ' --maxtweets 5000')
+    import sys
+    sys.path.insert(0,'/GetOldTweets-python-master')
+    import Exporter
+    os.system('python3 /GetOldTweets-python-master/Exporter.py --username ' + username + ' --maxtweets 5000')
     return stats(username,'usertweets.csv')
 getUserTweets("ask_adarsh")
 
