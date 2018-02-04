@@ -23,7 +23,7 @@ tokenizer = TweetTokenizer()
 # from sklearn.model_selection import train_test_split
 # from sklearn.feature_extraction.text import TfidfVectorizer
 # import seaborn as sb
-from sklearn.preprocessing import scale
+# from sklearn.preprocessing import scale
 # import matplotlib.pyplot as plt
 # get_ipython().magic('matplotlib inline')
 
